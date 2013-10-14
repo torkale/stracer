@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Stracer::VERSION
   spec.authors       = ["tor"]
   spec.email         = ["torkale@gmail.com"]
-  spec.description   = %q{Central point for logging and tracing of system events}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Central point for logging and tracing of system events using statsd and log4r}
+  spec.summary       = %q{Central point for logging and tracing of system events}
   spec.homepage      = ""
   spec.license       = "MIT"
 
