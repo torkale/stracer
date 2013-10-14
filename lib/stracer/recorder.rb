@@ -6,17 +6,17 @@ module Stracer
       @host = opts[:host] || "unknown_host"
     end
 
-    def error(message, object = nil)
-      @log.error(message, object)
+    def error(message)
+      @log.error(message)
     end
 
-    def trace(label, message = nil, object = nil)
-      @log.debug(message, object) if message
+    def trace(label, message)
+      @log.debug(message) if message
       @stats.inc "#{label}.#{@host}"
     end
 
-    def fail(label, message = nil, err = nil)
-      error(message, err)
+    def fail(label, message = nil)
+      error(message)
       @stats.inc "#{label}.error.#{@host}"
     end
 
