@@ -12,12 +12,12 @@ module Stracer
 
     def trace(label, message)
       @log.debug(message) if message
-      @stats.inc "#{label}.#{@host}"
+      @stats.increment "#{label}.#{@host}"
     end
 
-    def fail(label, message = nil)
+    def fail(label, message)
       error(message)
-      @stats.inc "#{label}.error.#{@host}"
+      @stats.increment "#{label}.error.#{@host}"
     end
 
     def measure(key)
