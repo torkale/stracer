@@ -15,7 +15,7 @@ module Stracer
       @stats.inc "#{label}.#{@host}"
     end
 
-    def fail(label, message, err)
+    def fail(label, message = nil, err = nil)
       error(message, err)
       @stats.inc "#{label}.error.#{@host}"
     end
