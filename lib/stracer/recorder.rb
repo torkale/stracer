@@ -10,7 +10,7 @@ module Stracer
       @log.error(message)
     end
 
-    def trace(label, message)
+    def trace(label, message = nil)
       @log.debug(message) if message
       @stats.increment "#{label}.#{@host}"
     end
