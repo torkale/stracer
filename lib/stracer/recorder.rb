@@ -21,9 +21,15 @@ module Stracer
     end
 
     def measure(key)
-      @stats.time("#{key}.time.#{@host}") do
-        yield
-      end
+      start = Time.now
+      result = yield
+      timing(key, ((Time.now - start) * 1000).round)
+      result
+    end
+
+    def timing(key, value)
+      @stats.timing("#{key}.#{@host}", value)
+      @log.debug("Traced total of #{value} for #{key}")
     end
   end
 end
