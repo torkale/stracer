@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Recorder	/Users/Tor/projects/stracer/lib/stracer/recorder.rb	/^  class Recorder$/;"	c	class:Stracer
+Stracer	/Users/Tor/projects/stracer/lib/stracer.rb	/^module Stracer$/;"	m
+Stracer	/Users/Tor/projects/stracer/lib/stracer/recorder.rb	/^module Stracer$/;"	m
+Stracer	/Users/Tor/projects/stracer/lib/stracer/version.rb	/^module Stracer$/;"	m
+error	/Users/Tor/projects/stracer/lib/stracer/recorder.rb	/^    def error(message)$/;"	f	class:Stracer.Recorder
+fail	/Users/Tor/projects/stracer/lib/stracer/recorder.rb	/^    def fail(label, message)$/;"	f	class:Stracer.Recorder
+initialize	/Users/Tor/projects/stracer/lib/stracer/recorder.rb	/^    def initialize(stats, log, opts = {})$/;"	f	class:Stracer.Recorder
+measure	/Users/Tor/projects/stracer/lib/stracer/recorder.rb	/^    def measure(key)$/;"	f	class:Stracer.Recorder
+recorder	/Users/Tor/projects/stracer/lib/stracer.rb	/^  def self.recorder(opts)$/;"	F	class:Stracer
+trace	/Users/Tor/projects/stracer/lib/stracer/recorder.rb	/^    def trace(label, message = nil)$/;"	f	class:Stracer.Recorder

@@ -17,7 +17,7 @@ module Stracer
 
     def fail(label, message)
       error(message)
-      @stats.increment "#{label}.error.#{@host}"
+      @stats.increment "error.#{label}.#{@host}"
     end
 
     def measure(key)
